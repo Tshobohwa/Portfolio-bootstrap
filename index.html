@@ -19,26 +19,32 @@
         .document-header {
             background-image: url('./images/Header-background-desktop.png');
             background-size: cover;
-            border-top-right-radius: 7rem;
-            padding-top: 5rem;
+            border-bottom-left-radius: 7rem;
+            padding: 10rem 0 8rem 0;
+            border-bottom-left-radius: 7rem;
         }
+    
         .card {
-    /* border: none !important; */
-    border-radius: 20px;
-    }
+        border-radius: 20px;
+        }
+
+        .about-myself{
+            border-top-right-radius: 7rem;
+            padding: 8rem 4rem 10rem 4rem;
+        }
 
         form {
             background-image: url('images/contact-form-background-desktop.png');
             background-size: cover;
+            padding: 10rem 0 8rem 0;
             border-top-left-radius: 7rem;
-            padding-top: 5rem;
         }
     </style>
     <title>Document</title>
 </head>
 
-<body>
-    <header class="document-header">
+<body class="bg-light">
+    <header class="document-header bg-white">
         <nav class="navbar navbar-expand-xl grid justify-content-between px-4 bg-white fixed-top"">
             <div class=" g-col-2 fw-bold text-primary">My logo</div>
             <ul class="d-flex list-unstyled align-items-xl-center pt-3">
@@ -53,28 +59,25 @@
                 </li>
             </ul>
         </nav>
-        <div class="container m-6">
-            <h1>I’m Alexandra <br>
-                Glad to see you!</h1>
-            <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
-                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
-                contact me.</p>
-            <a href="#" class="text-decoration-none">LET'S CONNECT</a>
-            <ul class="d-flex list-unstyled align-items-xl-center">
-                <li class="px-2"><a href="#"><img src="./images/twitter-icon.png" alt="twitter-icon"
-                            class="link-icon"></a></li>
-                <li class="px-2"><a href="#"><img src="./images/Linkedin-icon.png" alt="Linkedin-icon"
-                            class="link-icon"></a></li>
-                <li class="px-2"><a href="#"><img src="./images/m-icon.png" alt="m-icon" class="link-icon"></a></li>
-                <li class="px-2"><a href="#"><img src="./images/github-icon.png" alt="github-icon"
-                            class="link-icon"></a></li>
-                <li class="px-2"><a href="#"><img src="./images/Vector-icon.png" alt="Vector-icon"
-                            class="link-icon"></a></li>
-            </ul>
-        </div>
-
+        <div class="container row">
+            <div class="col-6 mx-auto">
+                <h1>I’m Alexandra <br>
+                    Glad to see you!</h1>
+                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
+                    work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+                    contact me.</p>
+                <a href="#" class="text-decoration-none">LET'S CONNECT</a>
+                <ul class="d-flex list-unstyled align-items-xl-center">
+                    <li class="px-2"><a href="#"><img src="./images/twitter-icon.png" alt="twitter-icon" class="link-icon"></a></li>
+                    <li class="px-2"><a href="#"><img src="./images/Linkedin-icon.png" alt="Linkedin-icon" class="link-icon"></a></li>
+                    <li class="px-2"><a href="#"><img src="./images/m-icon.png" alt="m-icon" class="link-icon"></a></li>
+                    <li class="px-2"><a href="#"><img src="./images/github-icon.png" alt="github-icon" class="link-icon"></a></li>
+                    <li class="px-2"><a href="#"><img src="./images/Vector-icon.png" alt="Vector-icon" class="link-icon"></a></li>
+                </ul>
+                </div>
+            </div>
     </header>
-    <section class="d-flex container-fluid bg-light mb-0 ">
+    <section class="d-flex container-fluid bg-light mb-0 work-section">
         <ul class="list-unstyled">
             <li style="margin: 5em;">
                 <div class="card mb-3" style="max-width: 100%;">
@@ -192,7 +195,7 @@
 
     </section>
     <footer>
-        <section class="container bg-white mb-3">
+        <section class="bg-white about-myself">
             <section class="row">
                 <section class="col g-col-6">
                     <h2 class="h2">About <br>
